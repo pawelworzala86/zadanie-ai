@@ -1,7 +1,7 @@
 import fetch  from 'node-fetch'
 import fs from 'fs'
 
-const config = fs.readFileSync('./config.json').toJSON()
+const config = JSON.parse(fs.readFileSync('./config.json').toString())
 
 const API_KEY = config.API_KEY
 const endpoint = 'https://api.openai.com/v1/chat/completions';
@@ -32,7 +32,7 @@ fetch(endpoint, options)
   .then(data => {
     console.log('Response from OpenAI:', data);
     console.log('Response from OpenAI:', data.choices[0].message.content);
-    fs.writeFileSync('./result.html',data.choices[0].message.content)
+    fs.writeFileSync('./artykul.html',data.choices[0].message.content)
   })
   .catch(error => {
     console.error('Error:', error);
