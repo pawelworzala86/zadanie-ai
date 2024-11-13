@@ -1,0 +1,5 @@
+podany text przerób na artykuł z kodem html
+kod html niech zaczyna się od tagu main jako głównego obiektu
+podany text przerób na sekcje z tagiem p i wydziel nagłówki jako h2
+sekcje niech mają zdjęcia image_placeholder.jpg z opisem alt i niech są pod tytułem h2
+użyj całego podanego tekstu do wyniku html

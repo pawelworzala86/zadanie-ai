@@ -5,15 +5,12 @@ const API_KEY = 'sk-proj-1XO-xePpx6daL5liNK-OyKl5PZcB-2cpvY4IRuKZJex4-MboeNrImY7
 const endpoint = 'https://api.openai.com/v1/chat/completions';
 
 const artykul = fs.readFileSync('./artykul.txt').toString()
+const query = fs.readFileSync('./query.txt').toString()
 
 const data = {
   model: 'gpt-3.5-turbo',
   messages: [
-    { role: 'system', content: `podany text przerób na artykuł z kodem html
-kod html niech zaczyna się od tagu main jako głównego obiektu
-podany text przerób na sekcje z tagiem p i wydziel nagłówki jako h2
-sekcje niech mają zdjęcia default.jpg z opisem alt i niech są pod tytułem h2
-użyj całego podanego tekstu do wyniku html` },
+    { role: 'system', content: query },
     { role: 'user', content: artykul }
   ],
   max_tokens: 50
