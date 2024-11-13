@@ -1,7 +1,9 @@
 import fetch  from 'node-fetch'
 import fs from 'fs'
 
-const API_KEY = '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';
+const config = fs.readFileSync('./config.json').toJSON()
+
+const API_KEY = config.API_KEY
 const endpoint = 'https://api.openai.com/v1/chat/completions';
 
 const artykul = fs.readFileSync('./artykul.txt').toString()
@@ -13,7 +15,7 @@ const data = {
     { role: 'system', content: query },
     { role: 'user', content: artykul }
   ],
-  max_tokens: 50
+  max_tokens: config.TOKENS
 };
 
 const options = {
