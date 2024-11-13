@@ -3,3 +3,24 @@ body {
     font-size: 17px;
     font-weight: 300;
 }
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.section .title {
+    font-weight: 400;
+    font-size: 32px;
+}
+.section .image-title {
+    font-weight: 400;
+    font-size: 0.85em;
+}
+.section .image{
+    
+}
+.section .image img{
+    
+}
+.section .image p{
+    
+}
