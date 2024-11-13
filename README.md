@@ -7,6 +7,5 @@ node .\
 aby wygenerować podglad.html\
 node szablon.js\
 \
-aby mozna było zobaczyć podglad html: http://localhost:3000\
+aby mozna było zobaczyć podglad html: http://localhost:3000 \
 node server.js\
-\
