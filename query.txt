@@ -1,5 +1,16 @@
 podany text przerób na artykuł z kodem html
 kod html niech zaczyna się od tagu main jako głównego obiektu
 podany text przerób na sekcje z tagiem p i wydziel nagłówki jako h2
-sekcje niech mają zdjęcia image_placeholder.jpg z opisem alt i niech są pod tytułem h2
-użyj całego podanego tekstu do wyniku html
+sekcje niech mają zdjęcia image_placeholder.jpg z opisem alt
+zdjęcia niech mają podpis o stylu 'imge-title'
+treści artykułów w p niech mają styl 'content'
+format sekcji:
+ <section class='section'>
+        <h2 class='title'>Tytuł</h2>
+        <div class='image'>
+            <img src="image_placeholder.jpg" alt="Tytuł obrazka" class="image" />
+            <p class="image-title">Podtytuł pod obrazkiem</p>
+        </div>
+        <p class="content">Opis</p>
+ </section>
+użyj całego podanego tekstu do wyniku
